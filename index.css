@@ -49,11 +49,21 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .profile{
     width: 30%;
     text-align: center;
+}
+
+.profile h3{
+    font-weight: normal;
+}
+
+.text-contents{
+    font-size: 14px;
 }
 
 .profile_icon img{
