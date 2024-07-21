@@ -3,7 +3,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans";
 }
 
 a {
@@ -36,13 +35,15 @@ a {
 }
 
 /* プロファイル */
-.profile_wrapper {
+.section_wrapper {
+  padding: 80px 0;
   text-align: center;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+.section_wrapper_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .heading h2 {
@@ -53,13 +54,25 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .profiles {
+    flex-wrap: nowrap;
+  }
 }
 
 .profile {
-  width: 30%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  .profile {
+    flex: 1;
+  }
 }
 
 .profile h3 {
@@ -75,10 +88,18 @@ a {
   object-fit: cover;
 }
 
-.message-wrapper {
+.profile_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.message_wrapper {
   background-color: #575757;
-  text-align: center;
-  padding-bottom: 50px;
+  color: #fff;
+}
+.text-contents {
+  text-align: left;
 }
 
 .btn {
@@ -114,11 +135,28 @@ a {
   gap: 12px;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .copyright {
   color: #fff;
   font-size: 14px;
 }
 
-/* メディアクエリ */
-@media (max-width: 670px) {
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
 }
