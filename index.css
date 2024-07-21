@@ -96,6 +96,12 @@ a{
     box-shadow: none;
 }
 
+footer{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 /* メディアクエリ */
 @media(mac-width: 670px){
 
