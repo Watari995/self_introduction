@@ -71,6 +71,31 @@ a{
     object-fit: cover;
 }
 
+.message-wrapper{
+    background-color: #575757;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn{
+    padding: 8px 24px;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.message{
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 7px #7d7d7d;
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
 /* メディアクエリ */
 @media(mac-width: 670px){
 
