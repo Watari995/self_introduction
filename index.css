@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   font-family: "Gill Sans";
@@ -40,6 +38,11 @@ a {
   text-align: center;
 }
 
+.profile_wrapper h3 {
+  font-weight: normal;
+  padding: 20px 0;
+}
+
 .heading {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -55,6 +58,7 @@ a {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .profile {
@@ -78,7 +82,7 @@ a {
 .message-wrapper {
   background-color: #575757;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .btn {
@@ -121,4 +125,13 @@ a {
 
 /* メディアクエリ */
 @media (max-width: 670px) {
+  .profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .profile {
+    width: 80%;
+  }
 }
